@@ -1,0 +1,95 @@
+.movie-details-container {
+  background-color: black;
+  font-family: 'Exo 2', sans-serif;
+  color: white;
+height: 1500px;
+}
+
+.movie-poster {
+border: none;
+border-radius: 10px;
+width: 300px;
+}
+
+.movie-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.movieDetails{
+  display: flex;
+}
+
+.aboutFilms {
+  display: flex;
+  margin-left: 70px;
+}
+
+.movie-poster-container {
+  margin-right: 30px;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.treeGroup{
+  display: flex;
+  margin-bottom: 20px;
+  width: 200px;
+}
+.movie-imdb-rating{
+  margin-left: 10px;
+  background-color: green;
+  color: white;
+  width: 25px;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+}
+.movie-runtime{
+  background-color: gray;
+  border: none;
+  border-radius: 3px;
+  width: 65px;
+  height: 20px;
+}
+.movie-metascore{
+  margin-left: 10px;
+  background-color: gray;
+}
+
+.value {
+  padding-left: 250px;
+}
+.infosliderWrap{
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-released,
+.movie-box-office,
+.movie-country,
+.movie-production,
+.movie-actors,
+.movie-director,
+.movie-writer {
+    margin-bottom: 10px;
+}
+.imbd{color: aliceblue;
+padding-left: 5px;}
+@media (max-width: 321px) {
+  .movieDetails{
+    flex-direction: column;
+  }
+  .aboutFilms{
+    margin: 0;
+    flex-direction: column;
+  }
+  .movie-poster-container{
+    margin-right: 0px;
+  }
+}

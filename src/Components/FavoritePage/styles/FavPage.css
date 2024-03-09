@@ -1,0 +1,32 @@
+.NoFavImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%; 
+}
+
+.movie-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.movie-card {
+  margin: 10px;
+  max-width: 200px;
+}
+
+.movie-card img {
+  width: 200px;
+  height: 300px;
+  border-radius: 8px;
+}
+.favMovText{
+  margin-top: 10px;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Exo 2', sans-serif;
+}

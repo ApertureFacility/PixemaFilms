@@ -1,0 +1,34 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: wheat;
+}
+
+.page-item {
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.page-link {
+  padding: 5px 10px;
+  border: 1px solid #8c4f8d;
+  cursor: pointer;
+  border-radius: 15px;
+  color: violet;
+}
+
+.page-link:hover {
+  background-color: #ddd;
+  color: #ddd;
+}
+
+.paginationMain {
+  width: auto;
+  height: auto;
+}
+
+.fs{
+  color: #4cd9f18d;
+}
+

@@ -1,0 +1,124 @@
+@import url('/src/services/cdn.css');
+
+.home-page{
+    background-color: black;
+}
+.home-page__nav {
+    background-color: black;
+    width: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.home-page__cards{
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+
+
+.home-page__nav-button {
+    width: 286px;
+    color: gray;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-page__nav-button img {
+    fill: gray;
+    width: 20px;
+    height: 20px; 
+    margin-right: 10px;
+}
+
+.home-page__nav-button:hover {
+    color: #7b61ff; 
+}
+
+.home-page__nav-button:hover svg {
+    fill: #7b61ff; 
+}
+.home-page__cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.home-page__main{
+    display: flex;
+    height: auto;
+    background-color: black;
+}
+.home-page__filters{
+    display: flex;
+    height: auto;
+    width: auto;
+}
+.home-page__film-cards{
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.home-page__rights{
+    color: white;
+    margin-top: auto;
+}
+.home-page__filter{
+    background-color: gray;
+    border: none;
+    border-radius: 15px;
+    margin-right: 5px;
+    text-align: center;
+    padding: 7px;
+    margin-left: 5px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+
+}
+.CardsWrapper{
+    width: auto;
+    height: auto;
+}
+.navRight{height: auto;}
+@media (max-width: 768px) {
+    .WPPX{
+        flex-direction: column;
+    }
+    .home-page__nav{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .home-page__nav-button{
+     justify-content: center;
+    }
+}
+@media (max-width: 320px) {
+    .WPPX{
+        flex-direction: column;
+    }
+    .home-page__nav{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
+    }
+    .home-page__nav-button{
+     justify-content: center;
+    }
+    .home-page__film-cards{
+        display: block;
+    }
+}
