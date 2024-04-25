@@ -1,0 +1,496 @@
+.profileTitle {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    line-height: 36px;
+    font-weight: 600;
+    font-family: inherit;
+  }
+  .nameLabel {
+    position: relative;
+    line-height: 24px;
+    font-weight: 600;
+    z-index: 1;
+  }
+  .nameInput,
+  .nameInputSection {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .nameInput {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color:#323537;
+    align-self: stretch;
+    height: 56px;
+    border-radius:10px;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    min-width: 250px;
+    z-index: 1;
+  }
+  .nameInputSection {
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px 0;
+    min-width: 346px;
+    max-width: 100%;
+  }
+  
+  .emailInput {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color:#323537;
+    align-self: stretch;
+    height: 56px;
+    border-radius:10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    min-width: 250px;
+    z-index: 1;
+  }
+  .emailInputSection,
+  .profileSection,
+  .rectangleParent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .emailInputSection {
+    flex: 1;
+    flex-direction: column;
+    gap: 8px 0;
+    min-width: 346px;
+  }
+  .profileSection,
+  .rectangleParent {
+    align-self: stretch;
+  }
+  .rectangleParent {
+    border-radius:10px;
+    background-color:#242426;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px;
+    box-sizing: border-box;
+    gap: 40px;
+    font-size: 16px;
+  }
+  .profileSection {
+    flex-direction: column;
+    gap: 16px 0;
+  }
+  .passwordTitle {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    line-height: 36px;
+    font-weight: 600;
+    font-family: inherit;
+  }
+  .frameItem {
+    height: 280px;
+    width: 1186px;
+    position: relative;
+    border-radius:10px;
+    background-color:#242426;
+    display: none;
+    max-width: 100%;
+  }
+  .passwordLabel {
+    position: relative;
+    line-height: 24px;
+    font-weight: 600;
+    z-index: 1;
+  }
+  .passwordInput {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color:#323537;
+    align-self: stretch;
+    height: 56px;
+    border-radius:10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #7b61ff;
+    min-width: 250px;
+    z-index: 1;
+  }
+  .passwordInputSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px 0;
+    min-width: 346px;
+    max-width: 100%;
+  }
+  .newPasswordLabel {
+    position: relative;
+    line-height: 24px;
+    font-weight: 600;
+    z-index: 1;
+  }
+  .newPasswordInput,
+  .newPasswordInputSection {
+    align-self: stretch;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .newPasswordInput {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color:#323537;
+    height: 56px;
+    border-radius:10px;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #7b61ff;
+    min-width: 250px;
+    z-index: 1;
+  }
+  .newPasswordInputSection {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px 0;
+  }
+  .confirmPasswordLabel {
+    position: relative;
+    line-height: 24px;
+    font-weight: 600;
+    z-index: 1;
+  }
+  .confirmPasswordInputSection,
+  .confirmPasswordInput {
+    align-self: stretch;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .confirmPasswordInput {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color:#323537;
+    height: 56px;
+    border-radius:10px;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #7b61ff;
+    min-width: 250px;
+    z-index: 1;
+  }
+  .confirmPasswordInputSection {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px 0;
+  }
+  .passwordSection,
+  .rectangleGroup,
+  .newPasswordSection {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .newPasswordSection {
+    flex: 1;
+    flex-direction: column;
+    gap: 24px 0;
+    min-width: 346px;
+  }
+  .passwordSection,
+  .rectangleGroup {
+    align-self: stretch;
+  }
+  .rectangleGroup {
+    border-radius:10px;
+    background-color:#242426;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px;
+    box-sizing: border-box;
+    gap: 40px;
+    font-size: 16px;
+  }
+  .passwordSection {
+    flex-direction: column;
+    gap: 16px 0;
+  }
+  .colorModeTitle {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    line-height: 36px;
+    font-weight: 600;
+    font-family: inherit;
+  }
+  .frameInner {
+    height: 100px;
+    width: 1186px;
+    position: relative;
+    border-radius:10px;
+    background-color:#242426;
+    display: none;
+    max-width: 100%;
+  }
+  .darkLabel,
+  .useDarkThemeLabel {
+    position: relative;
+    line-height: 24px;
+    z-index: 1;
+  }
+  .useDarkThemeLabel {
+    font-weight: 500;
+    color:#afb2b6;
+  }
+  .darkLightToggle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px 0;
+  }
+  .switchIcon {
+    height: 20px;
+    width: 32px;
+    position: relative;
+    z-index: 1;
+  }
+  .colorModeSection,
+  .rectangleContainer {
+    align-self: stretch;
+    display: flex;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .rectangleContainer {
+    border-radius:10px;
+    background-color:#242426;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 40px;
+    gap: 20px;
+    text-align: left;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Exo 2', sans-serif;
+  }
+  .colorModeSection {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 5px;
+    gap: 16px 0;
+  }
+  .rectangleDiv {
+    height: 56px;
+    width: 266px;
+    position: relative;
+    border-radius:10px;
+    background-color:#323537;
+    display: none;
+  }
+  .cancelLabel {
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'Exo 2', sans-serif;
+    color: #fff;
+    text-align: left;
+    z-index: 1;
+  }
+  .frameChild1,
+  .cancelButton {
+    border-radius:10px;
+  }
+  .cancelButton {
+    cursor: pointer;
+    border: 0;
+    padding: 16px;
+    background-color:#323537;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 173px;
+  }
+  .cancelButton:hover {
+    background-color:#595c5e;
+  }
+  .frameChild1 {
+    height: 56px;
+    width: 266px;
+    position: relative;
+    background-color:#7b61ff;
+    display: none;
+  }
+  .saveLabel {
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'Exo 2', sans-serif;
+    color: #fff;
+    text-align: left;
+    z-index: 1;
+  }
+  .saveButton {
+    cursor: pointer;
+    border: 0;
+    padding: 16px;
+    background-color:#7b61ff;
+    flex: 1;
+    border-radius:10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 173px;
+  }
+  .saveButton:hover {
+    background-color:#947aff;
+  }
+  .buttonSection,
+  .settingsFrame {
+    display: flex;
+    justify-content: flex-start;
+    height: 133vh;
+  }
+  .buttonSection {
+    width: 572px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0 40px;
+    max-width: 100%;
+  }
+  .settingsFrame {
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px 0;
+    max-width: calc(100% - 307px);
+    text-align: left;
+    font-size:24px;
+    color: #fff;
+    font-family: 'Exo 2', sans-serif;
+  }
+  .switchIcon {
+    width: 50px;
+    height: 25px;
+    background-color: black;
+    position: relative;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .switchIcon:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  
+  .switchIcon.on {
+    background-color: purple;
+  }
+  
+  .switchIcon.on:before {
+    transform: translateX(25px);
+  }
+  
+  @media screen and (max-width: 1050px) {
+    .settingsFrame {
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .nameInputSection,
+    .emailInputSection {
+      min-width: 100%;
+    }
+    .passwordInputSection,
+    .newPasswordSection {
+      min-width: 100%;
+    }
+    .rectangleGroup,.rectangleParent,.rectangleContainer{
+      gap: 40px;
+      width: 90%;
+      margin-left: 20px;
+    }
+    .buttonSection {
+      display: flex;
+      justify-content: space-between;
+      height: min-content;
+    }
+    
+    .cancelButton, .saveButton {
+      margin: 10px; /* Отступ между кнопками */
+    }
+    
+    .settingsFrame {
+      gap: 40px 0;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .colorModeTitle,
+    .passwordTitle,
+    .profileTitle {
+      font-size: 19px;
+      line-height: 29px;
+      margin-left: 25px;
+    }
+    .rectangleContainer {
+      flex-wrap: wrap;
+    }
+    
+  }
+      

@@ -1,0 +1,83 @@
+/* styles.css */
+.NoFavImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%; 
+}
+
+.movie-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.movie-card {
+  margin: 10px;
+  max-width: 200px;
+}
+
+.movie-card img {
+  width: 200px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.favMovText{
+  margin-top: 10px;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.no-movies-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%; 
+}
+
+.no-movies-image {
+  width: 90%;
+  height: 20%;
+}
+.movie-card img {
+  width: 200px;
+  height: 300px;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.no-movies-image {
+  width: 90%;
+  height: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.movie-card {
+  position: relative; /* Добавьте это */
+  margin: 10px;
+  max-width: 200px;
+}
+
+.FAVmovie-imdb-rating {
+  font-family: 'Exo 2', sans-serif;
+  position: absolute; /* Измените это */
+  top: 10px; /* Измените это */
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: green;
+  color: white;
+  width: 36px;
+  height: 21px;
+  border: none;
+  border-radius: 5px;
+}

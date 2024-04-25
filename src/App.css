@@ -1,0 +1,21 @@
+.app-content {
+    display: flex;
+  }
+  .main-content {
+    flex-grow: 1;
+  }
+  body {
+    background-color: black;
+    color: white; 
+  }
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.main-content {
+  display: flex;
+}
+.content {
+  flex-grow: 1;
+}
+  

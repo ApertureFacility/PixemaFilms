@@ -1,0 +1,101 @@
+.new-home-page__film-cards {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  gap: 50px;
+  justify-content: flex-end;
+  margin-bottom: 56px;
+  }
+  
+
+  .new-home-page__film-cards .new-film-card:last-child {
+    margin-right: 0;
+  }
+  
+  .new-film-card__poster {
+    width: 150px;
+    height: 230px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .new-home-page__film-cards {
+    width: auto;
+
+  }
+  
+  .new-film-card__title {
+    width: 140px;
+  }
+  
+  .recText {
+    width: 180px;
+    margin-left: auto;
+  }
+  
+  .rec {
+    margin: 20px 0 20px auto;
+    width: min-content;
+}
+
+
+.new-home-page__film-cards__arrows{
+    display: flex;
+justify-content: flex-start;
+} 
+.Addtofav{
+  margin-top: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+    border: 0;
+    padding: 16px;
+    background-color: #323537;
+    flex: 1 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;}
+    .Addtofav:hover {
+      background-color:#595c5e;
+    }
+    .new-film-card__title{
+      color: blanchedalmond;
+    }
+    .infoWrapp{
+      display: flex;
+    }
+    .infoNames{
+      margin-right: 20%;
+    }
+    .infoTTX{
+      width: 100%;
+    }
+    .movie-actors{
+     width: max-content;
+    }
+    @media (max-width: 321px) {
+      .infoNames{
+        margin-right: 3%;
+      }
+      .new-home-page__film-cards {
+        width: 287px;
+    }
+    .new-home-page__film-cards{
+      gap: 5px;
+    }
+    .new-film-card__poster{
+      width: 133px;
+    height: 213px;
+    border: none;
+    border-radius: 10px;
+    }
+    }
+    @media (min-width: 388px) and (max-width: 391px) {
+    .slideWrapp{
+      padding: 5px;
+      width: 350px;
+    }
+    
+    }

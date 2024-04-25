@@ -1,0 +1,169 @@
+.movie-details-container {
+  background-color: black;
+  font-family: 'Exo 2', sans-serif;
+  color: white;
+}
+
+.movie-poster {
+border: none;
+border-radius: 10px;
+width: 300px;
+}
+
+.movie-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width: 300px;
+}
+
+.movieDetails{
+  display: flex;
+}
+
+.aboutFilms {
+  display: flex;
+  margin-left: 70px;
+}
+
+.movie-poster-container {
+  margin-right: 30px;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.treeGroup{
+  display: flex;
+  margin-bottom: 20px;
+  width: 200px;
+}
+.movie-imdb-rating{
+  display: flex;
+  margin-left: 10px;
+  justify-content: center;
+  background-color: green;
+  color: white;
+  width: 36px;
+  height: 21px;
+  border: none;
+  border-radius: 5px;
+}
+.movie-runtime {
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 3px;
+  width: 65px;
+  height: 20px;
+  background-color: gray;
+}
+.movie-metascore {
+  display: flex;
+  margin-left: 10px;
+  background-color: gray;
+  justify-content: center;
+  width: 75px;
+  border-radius: 8px;
+}
+
+.value {
+  padding-left: 250px;
+}
+.infosliderWrap{
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-released,
+.movie-box-office,
+.movie-country,
+.movie-production,
+.movie-actors,
+.movie-director,
+.movie-writer {
+    margin-bottom: 10px;
+}
+.imbd{color: aliceblue;
+padding-left: 5px;}
+@media (max-width: 431px) {
+  .movie-info{
+    align-items: center;
+  }
+  .infoNames {
+    margin-right: 21%;
+    margin-left: 10%;
+    width: auto;
+}
+
+.new-home-page__film-cards {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  gap: 89px;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
+
+.movie-genre{
+  margin-top: 10px;
+}
+  .movie-poster-container {
+    margin: 0 auto; /* Центрирование по горизонтали */
+    width: 300px; /* Укажите желаемую ширину */
+  }
+  
+  /* Стили для кнопки .Addtofav */
+  .Addtofav {
+
+    max-width: 300px; /* Максимальная ширина кнопки */
+
+  }
+  .infoTTX{
+    max-width: 30%;
+  }
+  .movie-plot{
+    width: 80%;
+  }
+  /* Стили для .infosliderWrap */
+  .infosliderWrap {
+    display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрирование по горизонтали */
+  justify-content: center; /* Добавьте это для центрирования по вертикали */
+  }
+
+  .aboutFilms {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%; /* Добавьте это */
+    overflow-x: auto;
+}
+.movie-poster-container {
+
+  width: auto;
+}
+.movie-actors{
+  max-width: 50%;
+}
+}
+@media (max-width: 321px) {
+  .infoWrapp{
+    
+  }
+  .movieDetails{
+    flex-direction: column;
+  }
+  .aboutFilms{
+    margin: 0;
+    flex-direction: column;
+  }
+  .movie-poster-container{
+    margin-right: 0px;
+  }
+}
