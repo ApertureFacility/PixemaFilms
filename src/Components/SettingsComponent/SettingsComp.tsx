@@ -50,7 +50,7 @@ const SettingsFrame: FunctionComponent = () => {
       } else if (emailChanged) {
         toast.success('Email изменен, проверьте почту');
       }
-      // Обновляем пароль только если пользователь ввел новый пароль
+
       if (newPassword) {
         userData.password = newPassword;
         toast.success('Пароль изменен');

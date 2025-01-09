@@ -1,209 +1,196 @@
-.mobileFrameChild {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 320px;
-    height: 1323px;
-    display: none;
-  }
-  .filterFrame {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1px 12px 0;
-  }
-  .frameInterfaceDelete {
-    height: 1px;
-    flex: 1;
-    position: relative;
-    background-color:#323537;
-  }
-.filtredCard{
-  width: 200px;
-  height: 250px;
-}  
-  .emptyFrame {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: left;
-    color:white;
-    font-family: 'Exo 2', sans-serif;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    align-items: center;
-    padding: 32px 23px 48px 24px;
-    box-sizing: border-box;
-    gap: 20px 0;
-    z-index: 1;
-    font-size:20px;
-  }
-  .mobileFrame {
-    margin-bottom: -310px;
-    height:500px;
-    flex: 1;
-    position: relative;
-    background-color:#242426;
-    border-radius: 10px;
-  }
-  .mainMobile {
-    width: 100%;
-    height: 200vh;
-    position: relative;
-    overflow: hidden;
-  }
-  .genre {
-    position: relative;
-    line-height: 24px;
-    font-weight: 600;
-  }
-  .countryFrameChild {
-    height: 100px;
-    width: 272px;
-    position: relative;
-    border-radius:10px;
-    background-color:#323537;
-    display: none;
-  }
-  .countryFrame,
-  .movieFrame {
-    align-self: stretch;
-    display: flex;
-  }
-  .countryFrame {
-    border-radius:10px;
-    background-color:#323537;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 16px 12px 12px;
-    width: 100%;
-  }
-  .movieFrame {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0 1px 0 0;
-    gap: 8px 0;
-    text-align: left;
-    font-size: 16px;
-    color:white;
-    font-family: 'Exo 2', sans-serif;
-  }
-  .years {
-    position: relative;
-    line-height: 24px;
-    font-weight: 600;
-  }
-  .frameChild,
-  .frameItem,
-  .frameParent,
-  .yearsParent {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-  .frameChild {
-    width: 100%;
-    border: 0;
-    outline: 0;
-    background-color:#323537;
-    height: 56px;
-    flex: 1;
-    border-radius:10px;
-    align-items: center;
-    padding: 16px 20px;
-    box-sizing: border-box;
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color:#80858b;
-    min-width: 74px;
-  }
-  .frameParent,
-  .yearsParent {
-    align-self: stretch;
-    align-items: flex-start;
-    gap: 0 24px;
-  }
-  .yearsParent {
-    flex-direction: column;
-    padding: 0 1px 0 0;
-    gap: 8px 0;
-    text-align: left;
-    font-size: 16px;
-    color:white;
-    font-family: 'Exo 2', sans-serif;
-  }
-.sortByFrame {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-.vectorParent, .vectorGroup {
-    background-color: #323537;
-  }
-  
-  .vectorParent:active, .vectorGroup:active {
-    background-color: black;
-  }
-  .rating,.year{
-    padding: 15px 40px 15px 40px;
-  }
-  .frameItemShow{
-    width: 200px;
-    border: 0;
-    outline: 0;
-    background-color:#7b61ff;
-    height: 56px;
-    flex: 1;
-    border-radius:10px;
-    align-items: center;
-    padding: 16px 20px;
-    box-sizing: border-box;
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color:#d9dde2;
-    min-width: 74px;
-  }
-  .frameItemRes{
-    width: 200px;
-    border: 0;
-    outline: 0;
-    background-color:#323537;
-    height: 56px;
-    flex: 1;
-    border-radius:10px;
-    align-items: center;
-    padding: 16px 20px;
-    box-sizing: border-box;
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color:#d9dde2;
-    min-width: 74px;
-  }
 
-  @media (max-width: 431px) {
-    .emptyFrame,.mobileFrame,.mainMobile {width: 350px;}
-    .mainMobile {
-      margin: 0 auto;
-    }
-    .frameParent{
-      display: flex;
-      flex-direction: column;
-    }
-    .mobileFrame{
-      width: 350px;
-      height: 620px;
-    }
-    .mainMobile{
-      height: 4500px;
-    }
+.filters-page__background {
+  width: 100%;
+  height: 200vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.filters-page__background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 1323px;
+  display: none;
+}
+
+.filters-page__mobile-frame {
+  margin-bottom: -310px;
+  height: 500px;
+  flex: 1;
+  position: relative;
+  background-color: #242426;
+  border-radius: 10px;
+}
+
+.filters-page__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  align-items: center;
+  padding: 32px 23px 48px 24px;
+  box-sizing: border-box;
+  gap: 20px 0;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.filters-page__header {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1px 12px 0;
+}
+
+.filters-page__title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.filters-page__close-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.filters-page__genre-section,
+.filters-page__year-section {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1px 0 0;
+  gap: 8px 0;
+  text-align: left;
+  font-size: 16px;
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.filters-page__label {
+  position: relative;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.filters-page__genre-select-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.filters-page__genre-select {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: #323537;
+  height: 56px;
+  border-radius: 10px;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+  color: #80858b;
+}
+
+.filters-page__year-input-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.filters-page__year-input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: #323537;
+  height: 56px;
+  border-radius: 10px;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+  color: #80858b;
+}
+
+.filters-page__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.filters-page__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.filters-page__show-results-button,
+.filters-page__clear-filters-button {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  height: 56px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.filters-page__show-results-button {
+  background-color: #7b61ff;
+  color: #d9dde2;
+}
+
+.filters-page__clear-filters-button {
+  background-color: #323537;
+  color: #d9dde2;
+}
+
+.filters-page__button-text {
+  text-align: center;
+}
+
+.filters-page__movie-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  width: 100%;
+  margin-top: 12%;
+  height: max-content;
+}
+
+@media (max-width: 431px) {
+  .filters-page__content,
+  .filters-page__mobile-frame,
+  .filters-page {
+    width: 350px;
+  }
+  .filters-page {
+    margin: 0 auto;
+  }
+  .filters-page__buttons {
+    flex-direction: column;
+  }
+  .filters-page__mobile-frame {
+    height: 620px;
+  }
+  .filters-page {
+    height: 4500px;
+  }
 }

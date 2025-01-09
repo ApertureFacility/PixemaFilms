@@ -7,7 +7,7 @@ import closeicon from './Img/interfaceclose.svg'
 import 'react-toastify/dist/ReactToastify.css';
 import './FiltersPage.css'
 
-const MainMobile: FunctionComponent = () => {
+const FiltersPage: FunctionComponent = () => {
   const dispatch = useDispatch();
   const searchTerm = useSelector((state:any) => state.searchTerm); 
   const movies = useSelector((state:any) => state.movies); 
@@ -16,10 +16,8 @@ const MainMobile: FunctionComponent = () => {
   const [prevGenre, setPrevGenre] = useState("");
   const [prevYear, setPrevYear] = useState("");
 
-
   const handleShowResults = () => {
     if (genre !== prevGenre) {
-
       setPrevGenre(genre);
     }
     if (year !== prevYear) {
@@ -31,68 +29,75 @@ const MainMobile: FunctionComponent = () => {
   };
 
   return (
-    <div className="mainMobile">
-      <div className="mobileFrame">
+    <div className="filters-page__background">
+      <div className="filters-page__mobile-frame">
         <img
-          className="mobileFrameChild"
+          className="filters-page__background-image"
           alt=""
           src="/rectangle-320.svg"/>
-        <main className="emptyFrame">
-          <div className="filterFrame">
-            <div className="filters">Filters</div>
+        <main className="filters-page__content">
+          <div className="filters-page__header">
+            <div className="filters-page__title">Filters</div>
             <Link to="/">
-            <img
-              className="interfacecloseIcon"
-              loading="lazy"
-              alt=""
-              src={closeicon}
-            /></Link>
+              <img
+                className="filters-page__close-icon"
+                loading="lazy"
+                alt="Close"
+                src={closeicon}
+              />
+            </Link>
           </div>
-          <div className="textFrame">
-            <div className="frameInterfaceDelete" />
-          </div>
-          <section className="movieFrame">
-            <div className="genre">Genre</div>
-            <div className="countryFrame">
-              <select className="countryFrame" value={genre} onChange={(e) => setGenre(e.target.value)}>
-                <option value="">Выберите жанр</option>
-                <option className="documental">Movie</option>
-                <option className="thriller">Series</option>
-                <option className="documental">Episode</option>
-                <option className="thriller">Game</option>
+
+          <section className="filters-page__genre-section">
+            <div className="filters-page__label">Genre</div>
+            <div className="filters-page__genre-select-wrapper">
+              <select 
+                className="filters-page__genre-select"
+                value={genre} 
+                onChange={(e) => setGenre(e.target.value)}
+              >
+                <option value="">Select genre</option>
+                <option className="filters-page__option" value="movie">Movie</option>
+                <option className="filters-page__option" value="series">Series</option>
+                <option className="filters-page__option" value="episode">Episode</option>
+                <option className="filters-page__option" value="game">Game</option>
               </select>
-              <div className="countryFrameChild" />
-              <div className="sortFrame">
-                <div className="adventureInterface1">
-                </div>
-              </div>
             </div>
           </section>
-          <section className="yearsParent">
-            <div className="years">Year</div>
-            <div className="frameParent">
-              <input className="frameChild" placeholder="Type search year here" type="text" value={year} onChange={(e) => setYear(e.target.value)} />
+
+          <section className="filters-page__year-section">
+            <div className="filters-page__label">Year</div>
+            <div className="filters-page__year-input-wrapper">
+              <input 
+                className="filters-page__year-input" 
+                placeholder="Type search year here" 
+                type="text" 
+                value={year} 
+                onChange={(e) => setYear(e.target.value)} 
+              />
             </div>
           </section>
-          <section className="frameX">
-            <div className="frameParent">
-              <button className="rectangleParent" onClick={handleShowResults}>
-                <div className="frameItemShow"><div className="showResults">Show results</div></div>
+
+          <section className="filters-page__actions">
+            <div className="filters-page__buttons">
+              <button className="filters-page__show-results-button" onClick={handleShowResults}>
+                <div className="filters-page__button-text">Show results</div>
               </button>
               <Link to="/">
-              <button className="rectangleGroup">
-                <div className="frameItemRes"><div className="clearFilter">Close filter</div></div>
-              </button>
+                <button className="filters-page__clear-filters-button">
+                  <div className="filters-page__button-text">Close filter</div>
+                </button>
               </Link>
             </div>
           </section>
-          <div className="home-page__film-cards">
+
+          <div className="filters-page__movie-cards">
             {movies.map((movie:any) => <MovieCardXX movie={movie} />)}
-            </div>
+          </div>
         </main>
       </div>
     </div>
   );
 };
 
-export default MainMobile;
+export default FiltersPage;
