@@ -74,21 +74,23 @@ const initialState = {
   favMovies: [] as Movie[],
   movieDetails: null as MovieDetails | null,
   searchTerm: '',
+  loading: false,
 };
 
 export const moviesReducer = (state = initialState, action: FetchMoviesAction) => {
   switch (action.type) {
     case FETCH_MOVIES:
-      return { ...state, searchTerm: action.payload.searchTerm };
+      return { ...state, loading: true }; 
     case FETCH_MOVIES_SUCCESS:
-      return { ...state, movies: action.payload };
+      return { ...state, movies: action.payload, loading: false }; 
     case FETCH_MOVIE_DETAILS_SUCCESS:
-      return { ...state, movieDetails: action.payload, movies: [...state.movies, action.payload] };
+      return { ...state, movieDetails: action.payload, loading: false };
     case FETCH_FAV_MOVIE_DETAILS_SUCCESS:
-      return { ...state, favMovies: action.payload }; 
-    case SET_SEARCH_TERM: 
+      return { ...state, favMovies: action.payload, loading: false };
+    case SET_SEARCH_TERM:
       return { ...state, searchTerm: action.payload };
     default:
       return state;
   }
 };
+

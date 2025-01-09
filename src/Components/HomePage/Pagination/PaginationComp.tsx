@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import './Pagination.css'
 import { connect } from 'react-redux';
 import { fetchMovies } from '../../Redux/Actions/Actions';
-import { ThemeContext } from '../../themes/themeContext'; // замените на путь к вашему ThemeContext
+import { ThemeContext } from '../../themes/themeContext'; 
 import { useNavigate } from "react-router-dom";
+import './Pagination.css'
 
 type PaginationProps = {
   itemsPerPage: number;

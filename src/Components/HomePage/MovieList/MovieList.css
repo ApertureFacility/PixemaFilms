@@ -72,3 +72,11 @@
     align-items: center;
 }
 }
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 60vw;
+  margin-top: 20%;
+}
+

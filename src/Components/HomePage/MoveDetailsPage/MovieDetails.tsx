@@ -1,6 +1,7 @@
-import React, { useEffect, useCallback, useState } from 'react';
+import { useEffect, useCallback, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import ClipLoader from 'react-spinners/ClipLoader'; 
 import './MovieDetals.css'
 import SliderList from '../SliderDetails/SliderComp';
 import { fetchMovieDetails } from '../../Redux/Actions/Actions';
@@ -83,8 +84,25 @@ const MovieDetails = () => {
   
 
   if (!movieDetails) {
-    return <div>Loading...</div>;
+    return (
+      <div
+        className="loading-container"
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '100vh',
+          width:'100vw',
+          backgroundColor: theme.background,
+          color: theme.foreground,
+
+        }}
+      >
+        <ClipLoader color="#00bfff" size={80} /> {/* Увеличим размер */}
+      </div>
+    );
   }
+  
   const getRatingColor = (rating: number) => {
     if (rating <= 5) {
       return 'red';

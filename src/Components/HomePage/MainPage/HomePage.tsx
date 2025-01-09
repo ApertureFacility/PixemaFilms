@@ -1,7 +1,7 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
+import { ThemeContext } from '../../themes/themeContext'; 
 import Pagination from '../Pagination/PaginationComp';
 import MoviesList from '../MovieList/MoveList';
-import { ThemeContext } from '../../themes/themeContext'; 
 import './HomePage.css';
 
 const HomePage = () => {

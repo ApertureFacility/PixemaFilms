@@ -4,16 +4,16 @@ import { fetchFavMovieDetails } from '../Redux/Actions/Actions';
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../themes/themeContext';
 import { useContext } from 'react';
-import './styles/FavPage.css'; 
-import noImg from './Frame 1690.png'
+import './styles/FavoritePage.css'; 
+import noImg from './assets/Frame 1690.png'
 
 interface Movie {
     imdbID: string;
     Title: string;
     Poster: string;
     Year: string;
-    Genre: string; // Добавьте это
-    imdbRating: string; // Добавьте это
+    Genre: string; 
+    imdbRating: string;
 }
 interface RootState {
     favMovies: Movie[];

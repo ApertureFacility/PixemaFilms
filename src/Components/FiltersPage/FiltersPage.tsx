@@ -1,11 +1,11 @@
 import { FunctionComponent, useState } from "react";
-import 'react-toastify/dist/ReactToastify.css';
-import './FiltersPage.css'
-import closeicon from './Img/interfaceclose.svg'
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux'; 
 import { fetchMovies } from '../Redux/Actions/Actions';
 import MovieCardXX from "../HomePage/MovieList/FiltredCardsRender";
+import closeicon from './Img/interfaceclose.svg'
+import 'react-toastify/dist/ReactToastify.css';
+import './FiltersPage.css'
 
 const MainMobile: FunctionComponent = () => {
   const dispatch = useDispatch();
