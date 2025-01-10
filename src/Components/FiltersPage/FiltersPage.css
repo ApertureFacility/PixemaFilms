@@ -1,9 +1,7 @@
 
 .filters-page__background {
   width: 100%;
-  height: 200vh;
-  position: relative;
-  overflow: hidden;
+  height: max-content;
 }
 
 .filters-page__background-image {

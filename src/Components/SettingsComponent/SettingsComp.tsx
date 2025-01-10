@@ -1,10 +1,10 @@
 import { FunctionComponent, useState } from "react";
 import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import './SettingsComp.css'
 import { ThemeContext } from "../themes/themeContext";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import 'react-toastify/dist/ReactToastify.css';
+import './SettingsComp.css'
 
 const SettingsFrame: FunctionComponent = () => {
 
@@ -65,15 +65,15 @@ const SettingsFrame: FunctionComponent = () => {
   };
 
   return (
-    <div className="settingsFrame">
+    <div className="settings-frame">
       <ToastContainer />
-      <div className="profileSection">
-        <h3 className="profileTitle"style={{ color: theme.foreground }}>Profile</h3>
-        <div className="rectangleParent">
-          <div className="nameInputSection">
-            <div className="nameLabel">Name</div>
+      <div className="settings-frame__profile">
+        <h3 className="settings-frame__profile-title"style={{ color: theme.foreground }}>Profile</h3>
+        <div className="settings-frame__profile-inputs">
+          <div className="settings-frame__input-section">
+            <div className="settings-frame__label">Name</div>
             <input
-              className="nameInput"
+              className="settings-frame__input"
               placeholder="Name"
               value={name}
               type="text"
@@ -83,7 +83,7 @@ const SettingsFrame: FunctionComponent = () => {
           <div className="emailInputSection">
             <div className="emailLabel">Email</div>
             <input
-              className="emailInput"
+              className="settings-frame__input"
               placeholder="Email"
               value={email}
               type="text"
@@ -92,13 +92,13 @@ const SettingsFrame: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <div className="passwordSection">
-        <h3 className="passwordTitle"style={{ color: theme.foreground }}>Password</h3>
-        <div className="rectangleGroup">
-          <div className="passwordInputSection">
+      <div className="settings-frame__password">
+        <h3 className="settings-frame__password-title"style={{ color: theme.foreground }}>Password</h3>
+        <div className="settings-frame__password-inputs">
+          <div className="settings-frame__input-section">
             <div className="passwordLabel">Password</div>
             <input
-              className="passwordInput"
+              className="settings-frame__input"
               placeholder="Your password"
               type="text"
               value={currentPassword}
@@ -106,7 +106,7 @@ const SettingsFrame: FunctionComponent = () => {
             />
           </div>
           <div className="newPasswordSection">
-            <div className="newPasswordInputSection">
+            <div className="settings-frame__input-section">
               <div className="newPasswordLabel">New password</div>
               <input
                 className="newPasswordInput"
@@ -117,7 +117,7 @@ const SettingsFrame: FunctionComponent = () => {
               />
             </div>
             <div className="confirmPasswordInputSection">
-              <div className="confirmPasswordLabel">Confirm password</div>
+              <div className="settings-frame__label">Confirm password</div>
               <input
                 className="confirmPasswordInput"
                 placeholder="Confirm password"
@@ -129,24 +129,24 @@ const SettingsFrame: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <div className="colorModeSection">
-        <h3 className="colorModeTitle"style={{ color: theme.foreground }}>Color mode</h3>
-        <footer className="rectangleContainer">
-          <div className="frameInner" />
-          <div className="darkLightToggle">
-            <b className="darkLabel">Dark</b>
-            <div className="useDarkThemeLabel">Use dark theme</div>
+      <div className="settings-frame__color-mode">
+        <h3 className="settings-frame__color-mode-title"style={{ color: theme.foreground }}>Color mode</h3>
+        <footer className="settings-frame__footer">
+          <div className="settings-frame__footer-inner" />
+          <div className="settings-frame__toggle">
+            <b className="settings-frame__toggle-label">Dark</b>
+            <div className="settings-frame__toggle-description">Use dark theme</div>
           </div>
           <div className={`switchIcon ${isToggled ? 'on' : 'off'}`} onClick={toggleSwitch} />
         </footer>
       </div>
-      <div className="buttonSection">
+      <div className="settings-frame__buttons">
       <button className="saveButton" onClick={saveChanges}>
-          <div className="saveLabel">Save</div>
+          <div className="settings-frame__button-label">Save</div>
         </button>
         <button className="cancelButton" onClick={() => navigate('/')}>
-          <div className="rectangleDiv" />
-          <div className="cancelLabel">Cancel</div>
+          <div className="settings-frame__button-rectangle" />
+          <div className="settings-frame__button-label">Cancel</div>
         </button>
       </div>
     </div>

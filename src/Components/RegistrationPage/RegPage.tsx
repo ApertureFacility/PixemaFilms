@@ -1,7 +1,7 @@
 import { FunctionComponent, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./RegPage.css";
 import closeSVG from '../LogInPage/img/close-1511-svgrepo-com.svg'
+import "./RegPage.css";
 
 const RegPage: FunctionComponent = () => {
   const [name, setName] = useState("");

@@ -1,4 +1,4 @@
-.profileTitle {
+.settings-frame__profile-title {
     margin: 0;
     position: relative;
     font-size: inherit;
@@ -6,18 +6,18 @@
     font-weight: 600;
     font-family: inherit;
   }
-  .nameLabel {
+  .settings-frame__label {
     position: relative;
     line-height: 24px;
     font-weight: 600;
     z-index: 1;
   }
-  .nameInput,
-  .nameInputSection {
+  .settings-frame__input,
+  .settings-frame__input-section {
     display: flex;
     justify-content: flex-start;
   }
-  .nameInput {
+  .settings-frame__input {
     width: 100%;
     border: 0;
     outline: 0;
@@ -36,7 +36,7 @@
     min-width: 250px;
     z-index: 1;
   }
-  .nameInputSection {
+  .settings-frame__input-section {
     flex: 1;
     flex-direction: column;
     align-items: flex-start;
@@ -45,7 +45,7 @@
     max-width: 100%;
   }
   
-  .emailInput {
+  .settings-frame__input {
     width: 100%;
     border: 0;
     outline: 0;
@@ -67,8 +67,8 @@
     z-index: 1;
   }
   .emailInputSection,
-  .profileSection,
-  .rectangleParent {
+  .settings-frame__profile,
+  .settings-frame__profile-inputs {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -80,11 +80,11 @@
     gap: 8px 0;
     min-width: 346px;
   }
-  .profileSection,
-  .rectangleParent {
+  .settings-frame__profile,
+  .settings-frame__profile-inputs {
     align-self: stretch;
   }
-  .rectangleParent {
+  .settings-frame__profile-inputs {
     border-radius:10px;
     background-color:#242426;
     flex-direction: row;
@@ -94,11 +94,11 @@
     gap: 40px;
     font-size: 16px;
   }
-  .profileSection {
+  .settings-frame__profile {
     flex-direction: column;
     gap: 16px 0;
   }
-  .passwordTitle {
+  .settings-frame__password-title {
     margin: 0;
     position: relative;
     font-size: inherit;
@@ -121,7 +121,7 @@
     font-weight: 600;
     z-index: 1;
   }
-  .passwordInput {
+  .settings-frame__input {
     width: 100%;
     border: 0;
     outline: 0;
@@ -142,7 +142,7 @@
     min-width: 250px;
     z-index: 1;
   }
-  .passwordInputSection {
+  .settings-frame__input-section {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -159,7 +159,7 @@
     z-index: 1;
   }
   .newPasswordInput,
-  .newPasswordInputSection {
+  .settings-frame__input-section {
     align-self: stretch;
     display: flex;
     justify-content: flex-start;
@@ -182,12 +182,12 @@
     min-width: 250px;
     z-index: 1;
   }
-  .newPasswordInputSection {
+  .settings-frame__input-section {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px 0;
   }
-  .confirmPasswordLabel {
+  .settings-frame__label {
     position: relative;
     line-height: 24px;
     font-weight: 600;
@@ -222,8 +222,8 @@
     align-items: flex-start;
     gap: 8px 0;
   }
-  .passwordSection,
-  .rectangleGroup,
+  .settings-frame__password,
+  .settings-frame__password-inputs,
   .newPasswordSection {
     display: flex;
     align-items: flex-start;
@@ -236,11 +236,11 @@
     gap: 24px 0;
     min-width: 346px;
   }
-  .passwordSection,
-  .rectangleGroup {
+  .settings-frame__password,
+  .settings-frame__password-inputs {
     align-self: stretch;
   }
-  .rectangleGroup {
+  .settings-frame__password-inputs {
     border-radius:10px;
     background-color:#242426;
     flex-direction: row;
@@ -250,11 +250,11 @@
     gap: 40px;
     font-size: 16px;
   }
-  .passwordSection {
+  .settings-frame__password {
     flex-direction: column;
     gap: 16px 0;
   }
-  .colorModeTitle {
+  .settings-frame__color-mode-title {
     margin: 0;
     position: relative;
     font-size: inherit;
@@ -262,7 +262,7 @@
     font-weight: 600;
     font-family: inherit;
   }
-  .frameInner {
+  .settings-frame__footer-inner {
     height: 100px;
     width: 1186px;
     position: relative;
@@ -271,17 +271,17 @@
     display: none;
     max-width: 100%;
   }
-  .darkLabel,
-  .useDarkThemeLabel {
+  .settings-frame__toggle-label,
+  .settings-frame__toggle-description {
     position: relative;
     line-height: 24px;
     z-index: 1;
   }
-  .useDarkThemeLabel {
+  .settings-frame__toggle-description {
     font-weight: 500;
     color:#afb2b6;
   }
-  .darkLightToggle {
+  .settings-frame__toggle {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -294,14 +294,14 @@
     position: relative;
     z-index: 1;
   }
-  .colorModeSection,
-  .rectangleContainer {
+  .settings-frame__color-mode,
+  .settings-frame__footer {
     align-self: stretch;
     display: flex;
     box-sizing: border-box;
     max-width: 100%;
   }
-  .rectangleContainer {
+  .settings-frame__footer {
     border-radius:10px;
     background-color:#242426;
     flex-direction: row;
@@ -314,30 +314,20 @@
     color: #fff;
     font-family: 'Exo 2', sans-serif;
   }
-  .colorModeSection {
+  .settings-frame__color-mode {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     padding: 0 0 5px;
     gap: 16px 0;
   }
-  .rectangleDiv {
+  .settings-frame__button-rectangle {
     height: 56px;
     width: 266px;
     position: relative;
     border-radius:10px;
     background-color:#323537;
     display: none;
-  }
-  .cancelLabel {
-    position: relative;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 600;
-    font-family: 'Exo 2', sans-serif;
-    color: #fff;
-    text-align: left;
-    z-index: 1;
   }
   .frameChild1,
   .cancelButton {
@@ -366,7 +356,7 @@
     background-color:#7b61ff;
     display: none;
   }
-  .saveLabel {
+  .settings-frame__button-label {
     position: relative;
     font-size: 16px;
     line-height: 24px;
@@ -393,13 +383,13 @@
   .saveButton:hover {
     background-color:#947aff;
   }
-  .buttonSection,
-  .settingsFrame {
+  .settings-frame__buttons,
+  .settings-frame {
     display: flex;
     justify-content: flex-start;
     height: 133vh;
   }
-  .buttonSection {
+  .settings-frame__buttons {
     width: 572px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -407,7 +397,7 @@
     gap: 0 40px;
     max-width: 100%;
   }
-  .settingsFrame {
+  .settings-frame {
     flex: 1;
     flex-direction: column;
     align-items: flex-end;
@@ -448,47 +438,47 @@
   }
   
   @media screen and (max-width: 1050px) {
-    .settingsFrame {
+    .settings-frame {
       max-width: 100%;
     }
   }
   @media screen and (max-width: 750px) {
-    .nameInputSection,
+    .settings-frame__input-section,
     .emailInputSection {
       min-width: 100%;
     }
-    .passwordInputSection,
+    .settings-frame__input-section,
     .newPasswordSection {
       min-width: 100%;
     }
-    .rectangleGroup,.rectangleParent,.rectangleContainer{
+    .settings-frame__password-inputs,.settings-frame__profile-inputs,.settings-frame__footer{
       gap: 40px;
       width: 90%;
       margin-left: 20px;
     }
-    .buttonSection {
+    .settings-frame__buttons {
       display: flex;
       justify-content: space-between;
       height: min-content;
     }
     
     .cancelButton, .saveButton {
-      margin: 10px; /* Отступ между кнопками */
+      margin: 10px; 
     }
     
-    .settingsFrame {
+    .settings-frame {
       gap: 40px 0;
     }
   }
   @media screen and (max-width: 450px) {
-    .colorModeTitle,
-    .passwordTitle,
-    .profileTitle {
+    .settings-frame__color-mode-title,
+    .settings-frame__password-title,
+    .settings-frame__profile-title {
       font-size: 19px;
       line-height: 29px;
       margin-left: 25px;
     }
-    .rectangleContainer {
+    .settings-frame__footer {
       flex-wrap: wrap;
     }
     

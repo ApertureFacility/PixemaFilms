@@ -48,7 +48,7 @@ function Layout() {
     <>
       <Header />
       <div
-        className="WPPX"
+        className="ContentBlock"
         style={{ display: "flex", backgroundColor: bgColor }}
       >
         <Navbar />
