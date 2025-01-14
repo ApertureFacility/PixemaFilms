@@ -49,7 +49,7 @@ function Layout() {
       <Header />
       <div
         className="ContentBlock"
-        style={{ display: "flex", backgroundColor: bgColor }}
+        style={{ backgroundColor: bgColor }}
       >
         <Navbar />
         <Routes>
