@@ -4,21 +4,7 @@
   color: white;
 }
 
-.movie-poster {
-border: none;
-border-radius: 10px;
-width: 300px;
-}
-
-.movie-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  width: 300px;
-}
-
-.movieDetails{
+.movieDetails {
   display: flex;
 }
 
@@ -31,51 +17,70 @@ width: 300px;
   margin-right: 30px;
 }
 
+.movie-poster {
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+}
+
 .movie-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.treeGroup{
+
+.movie-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0 20px;
+  width: 300px;
+}
+
+.treeGroup {
   display: flex;
   margin-bottom: 20px;
   width: 200px;
 }
-.movie-imdb-rating{
+
+.movie-imdb-rating {
   display: flex;
-  margin-left: 10px;
   justify-content: center;
+  align-items: center;
   background-color: green;
   color: white;
   width: 36px;
   height: 21px;
   border: none;
   border-radius: 5px;
+  margin-left: 10px;
 }
+
 .movie-runtime {
   display: flex;
   justify-content: center;
-  border: none;
-  border-radius: 3px;
+  align-items: center;
+  background-color: gray;
+  color: white;
   width: 65px;
   height: 20px;
-  background-color: gray;
-}
-.movie-metascore {
-  display: flex;
-  margin-left: 10px;
-  background-color: gray;
-  justify-content: center;
-  width: 75px;
-  border-radius: 8px;
+  border: none;
+  border-radius: 3px;
 }
 
-.value {
-  padding-left: 250px;
-}
-.infosliderWrap{
+.movie-metascore {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  color: white;
+  width: 75px;
+  height: 20px;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.movie-genre {
+  margin-top: 10px;
 }
 
 .movie-released,
@@ -85,82 +90,85 @@ width: 300px;
 .movie-actors,
 .movie-director,
 .movie-writer {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-.imbd{color: aliceblue;
-padding-left: 5px;}
+
+.value {
+  padding-left: 250px;
+}
+
+.infosliderWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.imbd {
+  color: aliceblue;
+  padding-left: 5px;
+}
+
+
 @media (max-width: 431px) {
-  .movie-info{
+  .movieDetails {
+    flex-direction: column;
+  }
+
+  .aboutFilms {
+    margin: 0;
+    flex-direction: column;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .movie-poster-container {
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .movie-info {
     align-items: center;
   }
+
   .infoNames {
     margin-right: 21%;
     margin-left: 10%;
     width: auto;
-}
-
-.new-home-page__film-cards {
-  display: flex;
-  align-items: center;
-  overflow-x: auto;
-  gap: 89px;
-  justify-content: flex-end;
-  margin-top: 1rem;
-  margin-right: 0.5rem;
-}
-
-.movie-genre{
-  margin-top: 10px;
-}
-  .movie-poster-container {
-    margin: 0 auto; /* Центрирование по горизонтали */
-    width: 300px; /* Укажите желаемую ширину */
   }
-  
-  /* Стили для кнопки .Addtofav */
-  .Addtofav {
 
-    max-width: 300px; /* Максимальная ширина кнопки */
-
-  }
-  .infoTTX{
-    max-width: 30%;
-  }
-  .movie-plot{
+  .movie-plot {
     width: 80%;
   }
-  /* Стили для .infosliderWrap */
+
   .infosliderWrap {
-    display: flex;
-  flex-direction: column;
-  align-items: center; /* Центрирование по горизонтали */
-  justify-content: center; /* Добавьте это для центрирования по вертикали */
+    align-items: center;
+    justify-content: center;
   }
 
-  .aboutFilms {
-    margin: 0px;
+  .movie-actors {
+    max-width: 50%;
+  }
+
+  .new-home-page__film-cards {
     display: flex;
-    flex-direction: column;
-    max-width: 100%; /* Добавьте это */
+    align-items: center;
     overflow-x: auto;
-}
-.movie-poster-container {
+    gap: 89px;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+  }
 
-  width: auto;
+  .Addtofav {
+    max-width: 300px;
+  }
+
+  .infoTTX {
+    max-width: 30%;
+  }
 }
-.movie-actors{
-  max-width: 50%;
-}
-}
+
 @media (max-width: 321px) {
-  .movieDetails{
-    flex-direction: column;
-  }
-  .aboutFilms{
-    margin: 0;
-    flex-direction: column;
-  }
-  .movie-poster-container{
-    margin-right: 0px;
+  .movie-poster-container {
+    margin-right: 0;
   }
 }

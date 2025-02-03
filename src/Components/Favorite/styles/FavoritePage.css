@@ -62,15 +62,15 @@
   margin-right: auto;
 }
 .movie-card {
-  position: relative; /* Добавьте это */
+  position: relative;
   margin: 10px;
   max-width: 200px;
 }
 
 .FAVmovie-imdb-rating {
   font-family: 'Exo 2', sans-serif;
-  position: absolute; /* Измените это */
-  top: 10px; /* Измените это */
+  position: absolute; 
+  top: 10px;
   left: 10px;
   display: flex;
   justify-content: center;
